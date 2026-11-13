@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.tmp-tests/
+.scratch*/
+# 运行时生成的数据文件
+BBDown.data
+BBDownTV.data
+BBDownApp.data
+BBDown.archives
+BBDown.config
+qrcode.png
+debug_*.json

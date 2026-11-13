@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbdown-python"
+version = "1.0.0"
+description = "BBDown 的 Python 重写版：命令行式哔哩哔哩下载器（独立版本号，从 1.0.0 开始）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ported from nilaoda/BBDown" }]
+keywords = ["bilibili", "downloader", "bbdown"]
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+qr = ["qrcode>=7.4"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+bbdown = "bbdown.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bbdown*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

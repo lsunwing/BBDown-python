@@ -1,0 +1,5 @@
+# 运行必需（HTTP 请求）
+requests>=2.28
+
+# 可选：`bbdown login` / `bbdown logintv` 生成二维码图片与终端二维码
+# qrcode>=7.4
